@@ -286,8 +286,8 @@ const Hero: React.FC = () => {
                 }}
                 className={`w-2 h-2 rounded-full transition-all duration-300 ${
                   i === index 
-                    ? 'bg-white w-8' 
-                    : 'bg-white/50 hover:bg-white/80'
+                    ? 'bg-primary w-8' 
+                    : 'bg-accent hover:bg-white/80'
                 }`}
                 whileHover={{ scale: 1.2 }}
                 whileTap={{ scale: 0.9 }}

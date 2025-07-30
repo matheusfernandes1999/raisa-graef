@@ -103,7 +103,7 @@ const Footer: React.FC = () => {
   return (
     <motion.footer 
       ref={containerRef}
-      className="bg-gradient-to-br from-gray-900 via-black to-gray-900 text-white p-6 md:p-12 lg:p-16"
+      className="bg-gradient-to-br bg-black text-white p-6 md:p-12 lg:p-16"
       variants={containerVariants}
       initial="hidden"
       animate={isInView ? "visible" : "hidden"}
@@ -115,13 +115,13 @@ const Footer: React.FC = () => {
           variants={leftContentVariants}
         >
           <motion.h2 
-            className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight"
+            className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight text-primary"
             initial={{ opacity: 0, y: 30 }}
             animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            Engage with Us in{' '}
-            <span className="text-gray-300">Conversation.</span>
+            Engage with us in{' '}
+            <span className="text-accent">Conversation.</span>
           </motion.h2>
 
           {/* Contact Information */}
@@ -257,7 +257,7 @@ const Footer: React.FC = () => {
             transition={{ duration: 0.8, delay: 0.5 }}
           >
             <motion.h3 
-              className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-wider bg-gradient-to-r from-amber-200 via-gray-300 to-gray-500 bg-clip-text text-transparent"
+              className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-wider bg-gradient-to-r bg-primary bg-clip-text text-transparent"
               whileHover={{ 
                 scale: 1.05,
                 transition: { duration: 0.3 }
@@ -266,7 +266,7 @@ const Footer: React.FC = () => {
               Raisa Gräef
             </motion.h3>
             <motion.div
-              className="w-0 h-1 bg-gradient-to-r from-white to-gray-500 mt-2 lg:ml-auto"
+              className="w-0 h-1 bg-gradient-to-r bg-primary mt-2 lg:ml-auto"
               animate={isInView ? { width: "100%" } : { width: "0%" }}
               transition={{ duration: 1.2, delay: 0.8 }}
             />

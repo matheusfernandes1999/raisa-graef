@@ -130,22 +130,22 @@ const TimelessCharm: React.FC = () => {
         variants={textVariants}
       >
         <motion.h3 
-          className="text-xs md:text-sm font-bold text-gray-400 tracking-widest mb-2"
+          className="text-xs md:text-sm font-bold text-gray-700 tracking-widest mb-2"
           initial={{ opacity: 0, y: 20 }}
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
           transition={{ duration: 0.6, delay: 0.2 }}
         >
-          POLIFORM
+          RAISA GRÄEF
         </motion.h3>
         
         <motion.h2 
-          className="text-3xl md:text-4xl lg:text-5xl font-bold my-4 leading-tight"
+          className="text-3xl md:text-4xl lg:text-5xl font-bold my-4 leading-tight text-black"
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
           transition={{ duration: 0.8, delay: 0.3 }}
         >
           Modern Style <br className="hidden md:block" />
-          <span className="text-gray-700">Timeless Charm</span>
+          <span className="text-accent">Timeless Charm</span>
         </motion.h2>
         
         <motion.p 

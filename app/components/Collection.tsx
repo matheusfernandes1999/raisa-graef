@@ -39,7 +39,7 @@ const CollectionItem: React.FC<{
   return (
     <motion.div
       ref={ref}
-      className={`relative rounded-2xl overflow-hidden text-white group cursor-pointer ${className}`}
+      className={`relative rounded-2xl overflow-hidden text-primary group cursor-pointer ${className}`}
       initial={{ 
         opacity: 0, 
         scale: 0.8,
@@ -155,11 +155,11 @@ const Collection: React.FC = () => {
         variants={headerVariants}
       >
         <motion.h2 
-          className="text-2xl md:text-3xl lg:text-4xl font-bold leading-tight"
+          className="text-2xl md:text-3xl lg:text-4xl font-bold leading-tight text-black"
           whileHover={{ scale: 1.02 }}
         >
           Explore Our <br className="md:hidden" />
-          <span className="text-gray-700">Proudly Collection</span>
+          <span className="text-accent">Proudly Collection</span>
         </motion.h2>
         
         <motion.div 

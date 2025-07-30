@@ -34,14 +34,14 @@ const StatItem: React.FC<{ value: string; label: string; index: number }> = ({ v
       }}
       whileHover={{ 
         scale: 1.05,
-        y: -10,
-        boxShadow: "0 20px 40px rgba(0,0,0,0.15)",
+        y: -5,
+        boxShadow: "0 20px 20px rgba(0,0,0,0.15)",
         transition: { duration: 0.3 }
       }}
       whileTap={{ scale: 0.95 }}
     >
       <motion.p 
-        className="text-3xl font-bold text-gray-800"
+        className="text-3xl font-bold text-primary"
         initial={{ opacity: 0, y: 20 }}
         animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
         transition={{ 
@@ -53,7 +53,7 @@ const StatItem: React.FC<{ value: string; label: string; index: number }> = ({ v
         {value}
       </motion.p>
       <motion.p 
-        className="text-gray-500 text-sm mt-1"
+        className="text-black text-sm mt-1"
         initial={{ opacity: 0, y: 15 }}
         animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 15 }}
         transition={{ 

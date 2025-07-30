@@ -55,7 +55,7 @@ const Header: React.FC = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
           >
-            <Link href="/" className="text-2xl font-bold tracking-wider text-primary hover:text-gray-200 transition-colors drop-shadow-lg">
+            <Link href="/" className="text-2xl font-bold tracking-wider text-primary hover:text-accent transition-colors drop-shadow-lg">
               Raisa Gräef
             </Link>
           </motion.div>
@@ -70,10 +70,10 @@ const Header: React.FC = () => {
               >
                 <Link 
                   href={item.href}
-                  className="text-primary hover:text-white font-medium transition-colors relative group drop-shadow-md"
+                  className="text-primary hover:text-accent font-medium transition-colors relative group drop-shadow-md"
                 >
                   {item.name}
-                  <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-white group-hover:w-full transition-all duration-300"></span>
+                  <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-accent group-hover:w-full transition-all duration-300"></span>
                 </Link>
               </motion.div>
             ))}

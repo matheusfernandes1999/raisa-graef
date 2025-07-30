@@ -83,7 +83,7 @@ const ModernMinimalist = () => {
 
         <div className="absolute inset-0 p-6 sm:p-10 md:p-14 flex flex-col justify-end bg-gradient-to-t from-black/50 via-transparent to-transparent">
           <motion.span
-            className="bg-white text-black px-4 py-1 rounded-full text-sm w-fit mb-4"
+            className="bg-accent text-black px-4 py-1 rounded-full text-sm w-fit mb-4"
             variants={fadeUp}
             whileHover={{ scale: 1.05 }}
           >
@@ -91,7 +91,7 @@ const ModernMinimalist = () => {
           </motion.span>
 
           <motion.h1
-            className="text-5xl sm:text-6xl md:text-7xl font-bold leading-tight tracking-tight text-white"
+            className="text-5xl sm:text-6xl md:text-7xl font-bold leading-tight tracking-tight text-primary"
             variants={fadeUp}
           >
             <motion.span className="block" variants={fadeUp}>
@@ -158,10 +158,10 @@ const ModernMinimalist = () => {
 
           <div className="absolute inset-0 bg-black/30 p-6 text-white flex flex-col justify-between">
             <motion.div variants={fadeUp} >
-              <span className="text-xs uppercase border hover:bg-white hover:text-black duration-300 ease-linear border-white px-3 py-1 w-fit rounded-full mb-2">
+              <span className="text-xs text-primary uppercase border hover:bg-accent hover:text-black duration-300 ease-linear hover:border-accent border-primary px-3 py-1 w-fit rounded-full mb-2">
                 Best Furniture
               </span>
-              <h3 className="text-xl sm:text-2xl font-semibold leading-snug mt-4">
+              <h3 className="text-xl text-primary sm:text-2xl font-semibold leading-snug mt-4">
                 Indulge in the artistry
                 <br />
                 of everyday living
@@ -182,7 +182,7 @@ const ModernMinimalist = () => {
               }}
             >
               <motion.button
-                className="w-12 h-12 bg-white text-black rounded-full flex items-center justify-center"
+                className="w-12 h-12 bg-primary text-white rounded-full flex items-center justify-center"
                 whileHover={{ scale: 1.1, rotate: 45 }}
                 whileTap={{ scale: 0.95 }}
               >
