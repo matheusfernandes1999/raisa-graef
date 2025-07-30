@@ -162,12 +162,12 @@ const Hero: React.FC = () => {
 
             {/* Overlay de transição suave */}
             <motion.div 
-              className="absolute inset-0 bg-black/80 z-10"
+              className="absolute inset-0 bg-black/30 z-10"
             />
           </motion.div>
 
           {/* Overlay gradient fixo */}
-          <div className="absolute inset-0 bg-gradient-to-br from-black/40 via-transparent to-black/80 z-10" />
+          <div className="absolute inset-0 bg-gradient-to-br from-black/30 via-transparent to-black/60 z-10" />
         </div>
 
         {/* Conteúdo com parallax separado */}
