@@ -38,7 +38,7 @@ const ModernMinimalist = () => {
   return (
     <motion.section
       ref={containerRef}
-      className="grid grid-cols-1 lg:grid-cols-3 gap-6 items-stretch py-20"
+      className="grid grid-cols-1 lg:grid-cols-3 gap-6 items-stretch py-8"
       initial="hidden"
       animate={isInView ? "visible" : "hidden"}
     >
@@ -54,13 +54,14 @@ const ModernMinimalist = () => {
         >
           <motion.div
             style={{ y: mainImageY }}
-            className="absolute top-0 left-0 w-full h-[120%]"
+            className="absolute top-0 left-0 w-full h-[240%]"
           >
             <Image
               src={main}
               alt="Modern Living Room"
               className="object-cover"
               priority
+              fill
             />
           </motion.div>
         </div>

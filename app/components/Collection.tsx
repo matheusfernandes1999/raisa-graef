@@ -145,7 +145,7 @@ const Collection: React.FC = () => {
   return (
     <motion.section 
       ref={containerRef}
-      className="px-4 md:px-0 w-full"
+      className="px-0 md:px-0 w-full"
       initial="hidden"
       animate={isInView ? "visible" : "hidden"}
     >

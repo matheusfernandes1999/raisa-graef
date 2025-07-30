@@ -103,7 +103,7 @@ const Footer: React.FC = () => {
   return (
     <motion.footer 
       ref={containerRef}
-      className="bg-gradient-to-br bg-black text-white p-6 md:p-12 lg:p-16"
+      className="bg-gradient-to-br bg-black text-white p-6 md:p-12 lg:p-16 mt-12"
       variants={containerVariants}
       initial="hidden"
       animate={isInView ? "visible" : "hidden"}

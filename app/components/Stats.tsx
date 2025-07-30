@@ -86,7 +86,7 @@ const Stats: React.FC = () => {
   return (
     <motion.section 
       ref={containerRef}
-      className="py-8 sm:py-12 w-full"
+      className="py-8 sm:py-6 w-full"
       variants={containerVariants}
       initial="hidden"
       animate={isInView ? "visible" : "hidden"}
